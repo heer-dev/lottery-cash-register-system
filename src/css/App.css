@@ -1,0 +1,131 @@
+*
+{
+  box-sizing: border-box; 
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, yellow , orange);
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height:100vh;
+  padding: 20px;
+}
+
+.header {
+  color: yellow;
+  background-color: rgb(29, 162, 214);
+  padding: 5px;
+  width: 100%;
+  font-family: Arial Black;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 20px;
+}
+
+.money-grid {
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+
+.money-button{
+  padding: 40px;
+  border: 5px solid silver;
+  border-radius: 100%;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #053867;
+  color: white;
+}
+
+.money-button:hover{
+  background-color: #1375d1;
+  color: #f0f0f0;
+}
+.money-image {
+  flex:1;
+  flex-direction: row;
+  width: 90%; 
+  height: 150px; 
+  margin-bottom: 20px; 
+}
+
+.number-and-action{
+  padding: 40px;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:#58c0e6;
+  border: 2px solid #000;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.number-button {
+  background-color: black;
+  border: 5px solid silver;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: goldenrod;
+  font-weight: 800;
+}
+
+.number-button:hover{
+  background-color: #dd358c;
+}
+
+.action-button {
+  padding: 20px;
+  margin: 5px;
+  border: 4px solid gold;
+  border-radius: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+
+.action-button:hover {
+  background-color: #fffa90;
+  color: #000;
+}
+
+.number-button.selected {
+  background-color: #ff8c00;
+  color: white;
+}
+.selected-numbers {
+  border: 2px solid #b01111;
+  padding: 10px;
+  background-color: #fffa90;
+}
+
+.mark, .total {
+  font-weight: bold;
+}
+
+.mark {
+  color: red;
+}
+
+.total {
+  color: green;
+}
